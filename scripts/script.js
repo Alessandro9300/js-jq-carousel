@@ -10,6 +10,33 @@ $(document).ready(function(){
 
 var next = $(".fa-angle-right");
 var prev = $(".fa-angle-left");
+var thisPln = $(".pallini .fas");
+var contImg = $(".imgs img");
+
+thisPln.click(function(){
+
+  thisPln.removeClass("active");
+  $(this).addClass("active");
+
+  if ($(".pallini .uno").hasClass("active")){
+    $(".imgs img").removeClass("active")
+    $(".imgs .uno").addClass("active")
+  } else if ($(".pallini .due").hasClass("active")){
+    $(".imgs img").removeClass("active")
+    $(".imgs .due").addClass("active")
+  } else if ($(".pallini .tre").hasClass("active")){
+    $(".imgs img").removeClass("active")
+    $(".imgs .tre").addClass("active")
+  } else if ($(".pallini .quattro").hasClass("active")){
+    $(".imgs img").removeClass("active")
+    $(".imgs .quattro").addClass("active")
+  }
+
+// VOLEVO FARE UN CICLO MA NON SAPEVO COME FARE
+
+
+console.log($(this).css("color"));
+})
 
 next.click(function(){
   nextImg();
@@ -18,6 +45,8 @@ next.click(function(){
 prev.click(function(){
   prevImg();
 })
+
+
 
 function prevImg(){
   // trovo qual'è la classe attivata
