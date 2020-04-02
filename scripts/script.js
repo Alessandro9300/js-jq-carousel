@@ -32,11 +32,13 @@ thisPln.click(function(){
     $(".imgs .quattro").addClass("active")
   }
 
-// VOLEVO FARE UN CICLO MA NON SAPEVO COME FARE
+// VOLEVO FARE UN CICLO CON UN ARRAY MA NON CI SONO RIUSCITO
 
 
 console.log($(this).css("color"));
 })
+
+
 
 next.click(function(){
   nextImg();
@@ -45,8 +47,6 @@ next.click(function(){
 prev.click(function(){
   prevImg();
 })
-
-
 
 function prevImg(){
   // trovo qual'è la classe attivata
