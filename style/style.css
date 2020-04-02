@@ -1,0 +1,74 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../imgs/sfondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.caro-cont{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.caro-cont{
+  position: relative;
+  padding: 150px;
+}
+
+.imgs img{
+  display: none;
+  border: solid 15px black;
+  border-radius: 100%;
+  width: 1200px;
+  height: 900px;
+
+}
+
+.imgs .active{
+  display: inline-block;
+}
+
+.arrow{
+  font-size: 150px;
+}
+
+.arrow:hover{
+  cursor: pointer;
+}
+
+.logo{
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  transform: translateX(-50%);
+}
+
+.pallini{
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  transform: translateX(-50%);
+}
+
+.pallini .fas{
+  margin: 0 15px;
+  color: black;
+
+}
+
+.pallini .fas:hover{
+  cursor: pointer;
+}
+
+.pallini .active{
+  color: white;
+}
